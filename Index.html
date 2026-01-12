@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.M.J SERVICE | Accueil</title>
+
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* Fond général */
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Overlay transparent pour lisibilité */
+        .overlay {
+            background: rgba(11,28,45,0.75);
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        /* HEADER */
+        header {
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .menu-icon {
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* MENU */
+        .menu {
+            position: absolute;
+            top: 70px;
+            right: 8%;
+            background-color: rgba(0,0,0,0.9);
+            border-radius: 8px;
+            width: 200px;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        .menu a {
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .menu a:hover {
+            background-color: rgba(255,255,255,0.15);
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 120px 8% 80px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 15px 35px;
+            background-color: #ff9800;
+            color: #000;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .hero a:hover {
+            transform: translateY(-4px);
+        }
+
+        /* FOOTER MESSAGE */
+        .footer-box {
+            margin-top: 80px;
+            text-align: center;
+            padding: 40px 8%;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 8px;
+        }
+
+        .footer-box p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 15px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        /* RÉSEAUX SOCIAUX */
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .footer-social a {
+            font-size: 26px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-instagram { color: #E1306C; }
+        .fa-tiktok { color: #ffffff; }
+        .fa-youtube { color: #FF0000; }
+        .fa-linkedin { color: #0A66C2; }
+        .fa-whatsapp { color: #25D366; }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+<header>
+    <h1>B.M.J SERVICE</h1>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU AVEC SEULEMENT 2 ONGLES -->
+    <div class="menu" id="menu">
+        <a href="inscription.html">Inscription</a>
+        <a href="connexion.html">Connexion</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Construisez votre avenir dès aujourd’hui</h2>
+    <p>
+        B.M.J SERVICE est une plateforme de formation professionnelle et financière
+        destinée à ceux qui veulent apprendre, évoluer et réussir sérieusement.
+    </p>
+
+    <a href="inscription.html">Commencer maintenant</a>
+</section>
+
+<div class="footer-box">
+    <p>
+        B.M.J SERVICE — Plateforme de formation professionnelle et financière.<br>
+        République Démocratique du Congo, Province du Haut-Katanga,
+        Territoire de Sakania, Ville de Mokambo.
+    </p>
+
+    <div class="footer-social">
+        <a href="https://www.instagram.com/greatman9609?utm_source=qr&igsh=OTVma2c3N2FyeDc5" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@bmjreussir?_r=1&_t=ZM-930CaOPJ3CV" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://youtube.com/@justinmussiwa?si=9NxCJ6VUf39Je03k" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/posts/justin-mussiwa-167b8a331_cest-%C3%A0-vous-de-prendre-conscience-activity-7341023134810017792-ogV-" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/243993585711" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</div>
+
+<footer>
+    © 2026 B.M.J SERVICE — Tous droits réservés
+</footer>
+
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+</script>
+
+</body>
+</html>
